@@ -5,17 +5,37 @@ import java.awt.event.*;
 
 //TODO create translation module to return appropriate string and 
 public class Disaster {
-    public String getText(String country) {
+    public static int stringNumber(String country) {
         
-        String text = "";
+        int lineNumber;
         
         switch (country) {
             
+            case "Brazil":
+                lineNumber = 1;
+                break;
             case "Canada":
-                
+                lineNumber = 2;
+                break;
+            case "Iceland":
+                lineNumber = 3;
+                break;
+            case "Malaysia":
+                lineNumber = 4;
+                break;
+            case "New Zealand":
+                lineNumber = 5;
+                break;
+            case "Tanzania":
+                lineNumber = 6;
+                break;
+            default:
+                lineNumber = 1;
                 
         }
         
-    return text;
+    return lineNumber -1;
     }
+    
+    
 }
