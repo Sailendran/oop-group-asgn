@@ -1,4 +1,4 @@
-package login.com.my.group_project;
+package com.my.group_project;
 
 //Used to read JSON files
 import java.io.FileReader;
@@ -13,7 +13,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
 
-public class translation {
+public class Translation {
     
     //reads what language must be used and sets path to appropriate langauge folder
     
@@ -86,8 +86,8 @@ public class translation {
         int totalLines = 6;
         
         
-        Path path = translation.getPath().resolve(filename);
-//        System.out.println(translation.getPath());
+        Path path = Translation.getPath().resolve(filename);
+//        System.out.println(Translation.getPath());
 //        System.out.println(path);
         
         if (line>totalLines) {

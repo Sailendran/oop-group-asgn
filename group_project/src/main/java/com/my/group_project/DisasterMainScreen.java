@@ -1,4 +1,4 @@
-package login.com.my.group_project;
+package com.my.group_project;
 
 import java.io.IOException;
 import java.util.logging.Level;

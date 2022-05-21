@@ -1,9 +1,4 @@
-package login.com.my.group_project;
-
-import java.awt.Toolkit.*;
-import java.awt.event.*;
-
-//TODO create translation module to return appropriate string and 
+package com.my.group_project;
 public class Disaster {
     public static int stringNumber(String country) {
         

@@ -1,4 +1,4 @@
-package login.com.my.group_project;
+package com.my.group_project;
 
 public class GroupProject {
 

@@ -1,4 +1,4 @@
-package login.com.my.group_project;
+package com.my.group_project;
 
 import java.io.IOException;
 
@@ -69,7 +69,7 @@ public class CountryInfo extends javax.swing.JFrame {
           
         jLabel1.setText(country);
         
-        jLabel2.setText("<html>" + translation.disasterString(Disaster.stringNumber(country)) + "</html>");
+        jLabel2.setText("<html>" + Translation.disasterString(Disaster.stringNumber(country)) + "</html>");
         
     }
     
