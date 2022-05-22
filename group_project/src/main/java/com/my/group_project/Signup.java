@@ -11,6 +11,11 @@ public class Signup extends javax.swing.JFrame {
      */
     public Signup() {
         initComponents();
+        jLabel1.setText(Translation.accountString(6));
+        jLabel2.setText(Translation.accountString(2));
+        jLabel3.setText(Translation.accountString(3));
+        jButton1.setText(Translation.accountString(8));
+        jButton2.setText(Translation.accountString(9));
     }
 
     /**
@@ -128,14 +133,14 @@ public class Signup extends javax.swing.JFrame {
         jLabel5.setText("");
         
         if (!(MyUtils.arraysEqual(jPasswordField1.getPassword(), jPasswordField2.getPassword()))) {
-            jLabel5.setText("Passwords do not match!!");
+            jLabel5.setText(Translation.accountString(10));
         } else {
         
             try {
                 // TODO add your handling code here:
                 boolean created = Accounts.signup(jTextField1.getText(), jPasswordField1.getPassword(), jPasswordField2.getPassword());
                 if (!created) {
-                    jLabel5.setText("Process failed");
+                    jLabel5.setText(Translation.accountString(11));
                 } else {
                     dispose();
                 }

@@ -11,9 +11,13 @@ public class DisasterMainScreen extends javax.swing.JFrame {
      */
     public DisasterMainScreen() {
         initComponents();
-    //TODO Delete this when not needed
-//        jLabel1.setText(text.getline(2));
-//        jButton1.setText("Gay");
+        jLabel1.setText(Translation.dmsString(1));
+        jButton1.setText(Translation.dmsString(2));
+        jButton2.setText(Translation.dmsString(4));
+        jButton3.setText(Translation.dmsString(3));
+        jButton4.setText(Translation.dmsString(5));
+        jButton5.setText(Translation.dmsString(6));
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -125,7 +129,7 @@ public class DisasterMainScreen extends javax.swing.JFrame {
             CountryInfo ci = new CountryInfo();
             
             ci.setBehaviour(ci);
-            ci.setText("Canada");
+            ci.setText(Translation.dmsString(2));
             
         } catch (IOException ex) {
             Logger.getLogger(DisasterMainScreen.class.getName()).log(Level.SEVERE, null, ex);
@@ -141,7 +145,7 @@ public class DisasterMainScreen extends javax.swing.JFrame {
             CountryInfo ci = new CountryInfo();
             
             ci.setBehaviour(ci);
-            ci.setText("Malaysia");
+            ci.setText(Translation.dmsString(3));
             
         } catch (IOException ex) {
             Logger.getLogger(DisasterMainScreen.class.getName()).log(Level.SEVERE, null, ex);
@@ -157,7 +161,7 @@ public class DisasterMainScreen extends javax.swing.JFrame {
             CountryInfo ci = new CountryInfo();
             
             ci.setBehaviour(ci);
-            ci.setText("Iceland");
+            ci.setText(Translation.dmsString(4));
             
         } catch (IOException ex) {
             Logger.getLogger(DisasterMainScreen.class.getName()).log(Level.SEVERE, null, ex);
@@ -173,7 +177,7 @@ public class DisasterMainScreen extends javax.swing.JFrame {
             CountryInfo ci = new CountryInfo();
             
             ci.setBehaviour(ci);
-            ci.setText("New Zealand");
+            ci.setText(Translation.dmsString(5));
             
         } catch (IOException ex) {
             Logger.getLogger(DisasterMainScreen.class.getName()).log(Level.SEVERE, null, ex);
@@ -189,7 +193,7 @@ public class DisasterMainScreen extends javax.swing.JFrame {
             CountryInfo ci = new CountryInfo();
             
             ci.setBehaviour(ci);
-            ci.setText("Brazil");
+            ci.setText(Translation.dmsString(6));
         } catch (IOException ex) {
             Logger.getLogger(DisasterMainScreen.class.getName()).log(Level.SEVERE, null, ex);
         }

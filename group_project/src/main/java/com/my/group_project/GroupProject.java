@@ -4,9 +4,9 @@ public class GroupProject {
 
     public static void main(String[] args) {
         
-        //run login sequence
-        
-        //main menu
+        //wow so short lol
+        Login lg = new Login();
+        lg.setVisible(true);
         
     }
 }

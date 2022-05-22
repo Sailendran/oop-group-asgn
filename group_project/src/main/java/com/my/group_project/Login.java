@@ -15,6 +15,11 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
+        jLabel1.setText(Translation.accountString(1));
+        jLabel2.setText(Translation.accountString(2));
+        jLabel3.setText(Translation.accountString(3));
+        jButton1.setText(Translation.accountString(4));
+        jButton2.setText(Translation.accountString(5));
     }
 
     /**
@@ -137,6 +142,8 @@ public class Login extends javax.swing.JFrame {
         
         if (loggedin) {
             dispose();
+        } else {
+            jLabel4.setText(Translation.accountString(12));
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -12,6 +12,8 @@ import java.io.FileInputStream;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Translation {
     
@@ -79,16 +81,129 @@ public class Translation {
     //sphagetti code because I misnamed a folder langauge instead of language.
     //my suffering is immense and my dissapointment immeasureable
     @SuppressWarnings("empty-statement")
-    public static String disasterString(int line) throws IOException {
+    public static String disasterString(int line) {
         
-        String filename = "disaster.txt";
-        //WARNING: EDIT THIS IF #LINES CHANGES
-        int totalLines = 6;
+        try {
+            
+            String filename = "disaster.txt";
+            //WARNING: EDIT THIS IF #LINES CHANGES
+            int totalLines = 6;
+            
+            
+            Path path = Translation.getPath().resolve(filename);
+        //        System.out.println(Translation.getPath());
+        //        System.out.println(path);
+
+        if (line>totalLines) {
+            return "Error in code - line requested does not exist!";
+        }
+
+        String text = "Translation module error!!!";
+
+        FileInputStream fs;
+        BufferedReader br;
+
+        try {
+
+        //            System.out.println(path.toAbsolutePath().normalize().toString());
+
+        fs = new FileInputStream((String) path.toAbsolutePath().normalize().toString());
+        br = new BufferedReader(new InputStreamReader(fs));
+
+        try {
+
+            for (int i = 0; i < line; i++) {
+                br.readLine();
+            }
+
+            text = br.readLine();
+            //System.out.println(text);
+
+        } catch (IOException ex) {
+
+            ;
+
+        }
+
+        } catch (FileNotFoundException e) {
+            System.out.println("Language file not found!!");
+        }
+
+        return text;
+        } catch (IOException ex) {
+            Logger.getLogger(Translation.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    return "Translation module error!";
+    }
+    
+        public static String dmsString(int line) {
         
+        try {
+            
+            String filename = "disastermainscreen.txt";
+            //WARNING: EDIT THIS IF #LINES CHANGES
+            int totalLines = 6;
+            
+            
+            Path path = Translation.getPath().resolve(filename);
+        //        System.out.println(Translation.getPath());
+        //        System.out.println(path);
+
+        if (line>totalLines) {
+            return "Error in code - line requested does not exist!";
+        }
+
+        String text = "Translation module error!!!";
+
+        FileInputStream fs;
+        BufferedReader br;
+
+        try {
+
+        //            System.out.println(path.toAbsolutePath().normalize().toString());
+
+        fs = new FileInputStream((String) path.toAbsolutePath().normalize().toString());
+        br = new BufferedReader(new InputStreamReader(fs));
+
+        try {
+
+            for (int i = 1; i < line; i++) {
+                br.readLine();
+            }
+
+            text = br.readLine();
+            //System.out.println(text);
+
+        } catch (IOException ex) {
+
+            ;
+
+        }
+
+        } catch (FileNotFoundException e) {
+            System.out.println("Language file not found!!");
+        }
+
+        return text;
+        } catch (IOException ex) {
+            Logger.getLogger(Translation.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    return "Translation module error!";
+    }
+    
         
-        Path path = Translation.getPath().resolve(filename);
-//        System.out.println(Translation.getPath());
-//        System.out.println(path);
+    public static String accountString(int line) {
+        
+        String filename = "accountfunctions.txt";
+        int totalLines = 12;
+        
+        Path path;
+        try {
+            path = Translation.getPath().resolve(filename);
+        } catch (IOException ex) {
+            Logger.getLogger(Translation.class.getName()).log(Level.SEVERE, null, ex);
+            return "Translation module error! Path not found";
+        }
         
         if (line>totalLines) {
             return "Error in code - line requested does not exist!";
@@ -101,14 +216,12 @@ public class Translation {
         
         try {
             
-//            System.out.println(path.toAbsolutePath().normalize().toString());
-            
             fs = new FileInputStream((String) path.toAbsolutePath().normalize().toString());
             br = new BufferedReader(new InputStreamReader(fs));
             
             try { 
                 
-                for (int i = 0; i < line; i++) {
+                for (int i = 1; i < line; i++) {
                     br.readLine();
                 }
                 
@@ -128,6 +241,54 @@ public class Translation {
         return text;
     }
     
+        public static String mainString(int line) {
+        
+        String filename = "mainmenu.txt";
+        int totalLines = 4;
+        
+        Path path;
+        try {
+            path = Translation.getPath().resolve(filename);
+        } catch (IOException ex) {
+            Logger.getLogger(Translation.class.getName()).log(Level.SEVERE, null, ex);
+            return "Translation module error! Path not found";
+        }
+        
+        if (line>totalLines) {
+            return "Error in code - line requested does not exist!";
+        }
+        
+        String text = "Translation module error!!!";
+        
+        FileInputStream fs;
+        BufferedReader br;
+        
+        try {
+            
+            fs = new FileInputStream((String) path.toAbsolutePath().normalize().toString());
+            br = new BufferedReader(new InputStreamReader(fs));
+            
+            try { 
+                
+                for (int i = 1; i < line; i++) {
+                    br.readLine();
+                }
+                
+                text = br.readLine();
+                //System.out.println(text);
+                
+            } catch (IOException ex) {
+                
+                ;
+                
+            }
+            
+        } catch (FileNotFoundException e) {
+            System.out.println("Language file not found!!");
+        }
+            
+        return text;
+    }
     //TODO add functions for Big SUUUIIII and Benjamin's modules
     
 }
