@@ -68,7 +68,7 @@ public class CountryInfo extends javax.swing.JFrame {
     public void setText(String country) throws IOException {
         
         //TODO translate country name
-        jLabel1.setText(country);
+        jLabel1.setText(Translation.dmsString(Disaster.stringNumber(country) + 2));
         
         jLabel2.setText("<html>" + Translation.disasterString(Disaster.stringNumber(country)) + "</html>");
         
