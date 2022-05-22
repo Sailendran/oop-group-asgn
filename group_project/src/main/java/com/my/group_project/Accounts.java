@@ -39,25 +39,6 @@ class Accounts {
         return new String(ciphertext);
     }
  
-    // Decrypts cipher using shift
-    //NOTICE: MAY BE UNUSED (ENCRYPT GIVEN PASSWORD TO CHECK FOR EQUIVALANCE
-    public static String kaiserDecypher(String ciphertext) {
-        
-        char[] chars = ciphertext.toCharArray();
-        char[] text = new char[ciphertext.length()];
-        int i = 0;
-        
-        for (char x : chars) {
-            
-            char y = (char)(x - Accounts.shift);
-            text[i] = y;
-            i++;
-            
-        }
-        
-        
-        return new String(text);
-    }
     
     //login and signup handling
     public static boolean login(String username, char[] password) {
