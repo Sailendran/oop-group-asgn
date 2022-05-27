@@ -2,6 +2,10 @@ package com.my.group_project;
 
 import java.io.IOException;
 
+/**
+ *
+ * @author saile
+ */
 public class CountryInfo extends javax.swing.JFrame {
 
     /**

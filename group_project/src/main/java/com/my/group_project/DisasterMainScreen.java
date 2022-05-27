@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ *
+ * @author saile
+ */
 public class DisasterMainScreen extends javax.swing.JFrame {
 
     /**

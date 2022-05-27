@@ -4,6 +4,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.json.simple.parser.ParseException;
 
+/**
+ *
+ * @author saile
+ */
 public class Signup extends javax.swing.JFrame {
 
     /**

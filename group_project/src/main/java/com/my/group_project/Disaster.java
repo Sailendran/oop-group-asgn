@@ -1,4 +1,9 @@
 package com.my.group_project;
+
+/**
+ *
+ * @author saile
+ */
 public class Disaster {
     public static int stringNumber(String country) {
         

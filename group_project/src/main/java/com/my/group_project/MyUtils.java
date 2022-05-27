@@ -4,6 +4,10 @@
  */
 package com.my.group_project;
 
+/**
+ *
+ * @author saile
+ */
 public class MyUtils {
     
     public static boolean arraysEqual(char[] a, char[] b) {

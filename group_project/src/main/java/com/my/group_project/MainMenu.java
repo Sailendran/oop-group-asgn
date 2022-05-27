@@ -1,5 +1,9 @@
 package com.my.group_project;
 
+/**
+ *
+ * @author saile
+ */
 public class MainMenu extends javax.swing.JFrame {
 
     /**
