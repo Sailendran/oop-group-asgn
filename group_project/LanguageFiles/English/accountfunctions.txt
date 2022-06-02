@@ -10,3 +10,4 @@ Log in to existing account
 Passwords don't match!!!
 Process failed!
 Login failed!
+Username taken!

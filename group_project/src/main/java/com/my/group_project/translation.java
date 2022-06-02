@@ -7,6 +7,9 @@ import java.io.IOException;
 import org.json.simple.parser.*;
 import org.json.simple.*;
 
+//to write to JSON
+import java.io.FileWriter;
+
 //for reading txt files
 import java.io.FileInputStream;
 import java.io.BufferedReader;
@@ -16,6 +19,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Translation {
+    
+    public static void main(String[] args) {
+        setLang("Mandarin");
+    }
     
     //reads what language must be used and sets path to appropriate langauge folder
     
@@ -70,13 +77,50 @@ public class Translation {
     return filepath;
     }
     
-    
-    //translation functions for each part of the programme
-//    public String mainMenuString(int line) {
-//        
-//        ;
-//        
-//    }
+    public static void setLang(String lang) {
+        
+        JSONParser jp = new JSONParser();
+        try {
+            
+                Object obj = jp.parse(new FileReader("settings.json"));
+                JSONObject jo = (JSONObject) obj;
+                
+                switch (lang) {
+                case "English":
+                    jo.put("language", "English");
+                    break;
+                case "BM":
+                    jo.put("language", "BM");
+                    break;
+                case "Mandarin":
+                    jo.put("language", "Mandarin");
+                    break;
+                default:
+                    jo.put("language", "English");
+                }
+                
+                System.out.println(jo);
+                
+                 try (FileWriter file = new FileWriter("settings.json")) 
+                {
+                    file.write(jo.toString());
+                }
+
+                
+        } catch (FileNotFoundException e) {
+            
+            System.out.println("The file wasn't found");
+            
+        } catch (IOException e) {
+            
+            System.out.println("There was an IO Exception");
+            
+        } catch (ParseException e) {
+            
+            System.out.println("There was an error parsing JSON data");
+        }
+        
+    }
     
     //sphagetti code because I misnamed a folder langauge instead of language.
     //my suffering is immense and my dissapointment immeasureable
@@ -105,8 +149,7 @@ public class Translation {
 
         try {
 
-        //            System.out.println(path.toAbsolutePath().normalize().toString());
-
+        //System.out.println(path.toAbsolutePath().normalize().toString());
         fs = new FileInputStream((String) path.toAbsolutePath().normalize().toString());
         br = new BufferedReader(new InputStreamReader(fs));
 
@@ -160,7 +203,7 @@ public class Translation {
 
         try {
 
-        //            System.out.println(path.toAbsolutePath().normalize().toString());
+        //System.out.println(path.toAbsolutePath().normalize().toString());
 
         fs = new FileInputStream((String) path.toAbsolutePath().normalize().toString());
         br = new BufferedReader(new InputStreamReader(fs));
@@ -175,9 +218,7 @@ public class Translation {
             //System.out.println(text);
 
         } catch (IOException ex) {
-
-            ;
-
+            
         }
 
         } catch (FileNotFoundException e) {
@@ -195,7 +236,7 @@ public class Translation {
     public static String accountString(int line) {
         
         String filename = "accountfunctions.txt";
-        int totalLines = 12;
+        int totalLines = 13;
         
         Path path;
         try {
@@ -230,7 +271,7 @@ public class Translation {
                 
             } catch (IOException ex) {
                 
-                ;
+                System.out.println("IO exception");
                 
             }
             
@@ -244,7 +285,7 @@ public class Translation {
         public static String mainString(int line) {
         
         String filename = "mainmenu.txt";
-        int totalLines = 4;
+        int totalLines = 5;
         
         Path path;
         try {

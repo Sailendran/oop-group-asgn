@@ -20,7 +20,7 @@ class Accounts {
     
     //testing
     public static void main(String[] args) {
-        //System.out.println(kaiserCypher("h0m0sexual".toCharArray()));
+        //somecode
     }
     
     //universal shift value 
@@ -130,7 +130,10 @@ class Accounts {
                 }
                 
             }
-            if (!accountExists) {
+            
+            if (accountExists) {
+                return false;
+            }else if (!accountExists) {
                 //add the account to the JSON
                 jo.put(username, kaiserCypher(password));
                 
@@ -140,15 +143,17 @@ class Accounts {
                     lg.setVisible(true);
                     
                 } catch (IOException ex) {
+                    //condition IOException should never be met
                     Logger.getLogger(Accounts.class.getName()).log(Level.SEVERE, null, ex);
                     System.out.println("Couldn't write account");
                 }
                 
             }
+            System.out.println("true");
         return true;    
         }
-            
-    return false;        
+    //default- should never be read
+    return false;
     }
     
 

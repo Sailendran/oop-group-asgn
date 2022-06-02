@@ -2,3 +2,4 @@ Main Menu
 Information on disasters
 Quiz on disasters
 Exit
+Settings...
