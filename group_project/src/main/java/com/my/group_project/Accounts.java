@@ -20,7 +20,7 @@ class Accounts {
     
     //testing
     public static void main(String[] args) {
-        //somecode
+        //System.out.println(kaiserCypher("h0m0sexual".toCharArray()));
     }
     
     //universal shift value 
