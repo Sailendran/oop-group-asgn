@@ -34,4 +34,4 @@ Earthquakes
 Floods
 Landslides
 Hailstorms
-wildfires & Haze
+Wildfires & Haze

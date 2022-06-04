@@ -4,6 +4,9 @@
  */
 package com.my.group_project;
 
+import java.util.HashSet;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author saile
@@ -15,6 +18,15 @@ public class Settings extends javax.swing.JFrame {
      */
     public Settings() {
         initComponents();
+        if ((Translation.getLang()).equals("English")) {
+            jRadioButton1.setSelected(true);
+        } else if ((Translation.getLang()).equals("BM")) {
+            jRadioButton2.setSelected(true);
+        } else if ((Translation.getLang()).equals("Mandarin")) {
+            jRadioButton3.setSelected(true);
+        } else {
+            jRadioButton1.setSelected(true);
+        }
     }
 
     /**
@@ -98,16 +110,25 @@ public class Settings extends javax.swing.JFrame {
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
-        if (jRadioButton1.isSelected()) {
-            Translation.setLang("English");
-        }
         
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        //Translation.setLang(LanguageGroup.getSelection().getActionCommand());
-        System.out.println(evt.getSource());
+
+        if (jRadioButton1.isSelected()) {
+            Translation.setLang("English");
+        } else if (jRadioButton2.isSelected()) {
+            System.out.println("Malay");
+            Translation.setLang("BM");
+        } else if (jRadioButton3.isSelected()) {
+            Translation.setLang("Mandarin");
+        } else {
+            Translation.setLang("English");
+        }
+        
+        JOptionPane.showMessageDialog(rootPane, "Please restart the app for changes to take effect. Exiting...");
+        System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -143,6 +164,13 @@ public class Settings extends javax.swing.JFrame {
                 new Settings().setVisible(true);
             }
         });
+        
+    }
+    
+    private void setCheckMark() {
+        
+        
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

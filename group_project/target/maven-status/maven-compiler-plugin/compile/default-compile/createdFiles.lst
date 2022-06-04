@@ -20,9 +20,13 @@ com\my\group_project\DisasterMainScreen$3.class
 com\my\group_project\DisasterMainScreen.class
 com\my\group_project\DisasterMainScreen$6.class
 com\my\group_project\Login.class
+com\my\group_project\Survey$4.class
 com\my\group_project\Login$1.class
+com\my\group_project\MainMenu$5.class
+com\my\group_project\Survey$3.class
 com\my\group_project\Signup$1.class
 com\my\group_project\CountryInfo$1.class
+com\my\group_project\SurveyResults.class
 com\my\group_project\Settings$2.class
 com\my\group_project\DisasterMainScreen$4.class
 com\my\group_project\Login$3.class

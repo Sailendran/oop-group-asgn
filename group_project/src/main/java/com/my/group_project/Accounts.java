@@ -70,7 +70,7 @@ class Accounts {
                 
                 }
                 
-                if (accountExists) {
+                if (accountExists) {                    
                     String encryptPassInput = kaiserCypher(password);
                     
                     if (encryptPassInput.equals(jo.get(username))) {
@@ -150,7 +150,7 @@ class Accounts {
                 }
                 
             }
-            System.out.println("true");
+            //System.out.println("true");
         return true;    
         }
     //default- should never be read
