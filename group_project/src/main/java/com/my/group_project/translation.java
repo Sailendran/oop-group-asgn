@@ -21,7 +21,7 @@ import java.util.logging.Logger;
 public class Translation {
     
     public static void main(String[] args) {
-        setLang("Mandarin");
+        //setLang("Mandarin");
     }
     
     //reads what language must be used and sets path to appropriate langauge folder
@@ -331,5 +331,55 @@ public class Translation {
         return text;
     }
     //TODO add functions for Big SUUUIIII and Benjamin's modules
+    
+        
+    public static String surveyString(int line) {
+        
+        String filename = "survey.txt";
+        int totalLines = 37;
+        
+        Path path;
+        try {
+            path = Translation.getPath().resolve(filename);
+        } catch (IOException ex) {
+            Logger.getLogger(Translation.class.getName()).log(Level.SEVERE, null, ex);
+            return "Translation module error! Path not found";
+        }
+        
+        if (line>totalLines) {
+            return "Error in code - line requested does not exist!";
+        }
+        
+        String text = "Translation module error!!!";
+        
+        FileInputStream fs;
+        BufferedReader br;
+        
+        try {
+            
+            fs = new FileInputStream((String) path.toAbsolutePath().normalize().toString());
+            br = new BufferedReader(new InputStreamReader(fs));
+            
+            try { 
+                
+                for (int i = 1; i < line; i++) {
+                    br.readLine();
+                }
+                
+                text = br.readLine();
+                //System.out.println(text);
+                
+            } catch (IOException ex) {
+                
+                ;
+                
+            }
+            
+        } catch (FileNotFoundException e) {
+            //System.out.println("Language file not found!!");
+        }
+            
+        return text;
+    }
     
 }
