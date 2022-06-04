@@ -1,0 +1,13 @@
+Log In
+Username
+Password
+Log In!
+Register an account
+Sign Up
+Confirm password
+Sign Up!
+Log in to existing account
+Passwords don't match!!!
+Process failed!
+Login failed!
+Username taken!
