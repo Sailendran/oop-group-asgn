@@ -50,6 +50,7 @@ public class Survey extends javax.swing.JFrame {
         jLabel35.setText(Translation.surveyString(35));
         jLabel36.setText(Translation.surveyString(36));
         jLabel37.setText(Translation.surveyString(37));
+        jButton1.setText(Translation.surveyString(38));
         setDefaultCloseOperation(HIDE_ON_CLOSE);
     }
 

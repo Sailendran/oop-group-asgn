@@ -18,6 +18,7 @@ public class Signup extends javax.swing.JFrame {
         jLabel1.setText(Translation.accountString(6));
         jLabel2.setText(Translation.accountString(2));
         jLabel3.setText(Translation.accountString(3));
+        jLabel4.setText(Translation.accountString(7));
         jButton1.setText(Translation.accountString(8));
         jButton2.setText(Translation.accountString(9));
     }

@@ -1,0 +1,13 @@
+Log masuk
+Nama pengguna
+Kata laluan
+Log Masuk!
+Daftar akaun
+Daftar
+Sahkan kata laluan
+Daftar!
+Log masuk ke akaun sedia ada
+Kata laluan tidak sepadan!!!
+Proses gagal!
+Daftar masuk gagal!
+Nama pengguna telah digunakan!

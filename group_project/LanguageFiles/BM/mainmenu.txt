@@ -1,0 +1,5 @@
+Menu utama
+Maklumat tentang bencana
+Kuiz tentang bencana
+Keluar
+tetapan...

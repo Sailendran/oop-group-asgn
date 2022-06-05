@@ -18,6 +18,13 @@ public class Settings extends javax.swing.JFrame {
      */
     public Settings() {
         initComponents();
+        
+        jLabel1.setText(Translation.surveyString(39));
+        jRadioButton1.setText(Translation.surveyString(40));
+        jRadioButton2.setText(Translation.surveyString(41));
+        jRadioButton3.setText(Translation.surveyString(42));
+        jButton1.setText(Translation.surveyString(43));
+        
         if ((Translation.getLang()).equals("English")) {
             jRadioButton1.setSelected(true);
         } else if ((Translation.getLang()).equals("BM")) {
@@ -27,6 +34,8 @@ public class Settings extends javax.swing.JFrame {
         } else {
             jRadioButton1.setSelected(true);
         }
+        
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
     /**

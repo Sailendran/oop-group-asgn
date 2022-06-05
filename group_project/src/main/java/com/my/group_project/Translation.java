@@ -336,7 +336,7 @@ public class Translation {
     public static String surveyString(int line) {
         
         String filename = "survey.txt";
-        int totalLines = 37;
+        int totalLines = 43;
         
         Path path;
         try {
