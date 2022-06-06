@@ -69,6 +69,11 @@ public class Settings extends javax.swing.JFrame {
 
         LanguageGroup.add(jRadioButton2);
         jRadioButton2.setText("Malaysian");
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
 
         LanguageGroup.add(jRadioButton3);
         jRadioButton3.setText("Mandarin");
@@ -94,8 +99,8 @@ public class Settings extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jRadioButton2)
                             .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jButton1))))
+                            .addComponent(jButton1)
+                            .addComponent(jRadioButton3))))
                 .addContainerGap(90, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -139,6 +144,10 @@ public class Settings extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(rootPane, "Please restart the app for changes to take effect. Exiting...");
         System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     /**
      * @param args the command line arguments

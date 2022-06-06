@@ -1,37 +1,44 @@
-灾害信息知识调查
-1. 您为应对该发生的灾难做了哪些准备？
-没想要做
-做不到
-还没完成
-已经完成
-我已经收集了资料
-我已经和我所在地区的灾害管理代表进行了谈判
-我已经准备了一个邻里应急计划
-我已经准备了救灾用品
-我与提供紧急新闻或警报系统的实体签订了合同
-2. 您对以下灾害的灾害管理知识水平如何？
-好的折扣
-几乎所有的
-有些
-一点点
-没有东西
-地震
-洪水
-干旱
-野火
-冰雹
-3. 请回答以下有关灾害管理的问题
-是
-不是
-不知道
-您居住的地区是否有灾害管理或应急计划？
-贵国是否有涉及灾害管理的法律或政策？
-社区是否制定了自己的灾害管理政策？
-您或您的家人过去是否受过灾难的影响？
-4. 您想了解以下哪些灾害？
-地震
-洪水
-土崩
-冰雹
-野火和阴霾
-提交！
+zāi hài xìn xī zhī shí diào chá
+1. nín wéi yīng duì gāi fā shēng de zāi nán zuò liǎo nǎ xiē zhǔn bèi ?
+méi xiǎng yào zuò
+zuò bù dào
+huán méi wán chéng
+wǒ dǎ suàn zuò
+yǐ jīng wán chéng
+wǒ yǐ jīng shōu jí liǎo zī liào
+wǒ yǐ jīng hé wǒ suǒ zài dì qū de zāi hài guǎn lǐ dài biǎo jìn xíng liǎo tán pàn
+wǒ yǐ jīng zhǔn bèi liǎo yī gè lín lǐ yīng jí jì huá
+wǒ yǐ jīng zhǔn bèi liǎo jiù zāi yòng pǐn
+wǒ yǔ tí gōng jǐn jí xīn wén huò jǐng bào xì tǒng de shí tǐ qiān dìng liǎo hé tóng
+2. nín duì yǐ xià zāi hài de zāi hài guǎn lǐ zhī shí shuǐ píng rú hé ?
+hǎo de zhē kòu
+jī hū suǒ yǒu de
+yǒu xiē
+yī diǎn diǎn
+méi yǒu dōng xī
+dì zhèn
+hóng shuǐ
+gān hàn
+yě huǒ
+bīng báo
+3. qǐng huí dá yǐ xià yǒu guān zāi hài guǎn lǐ de wèn tí
+shì
+bù shì
+bù zhī dào
+nín jū zhù de dì qū shì fǒu yǒu zāi hài guǎn lǐ huò yīng jí jì huá ?
+guì guó shì fǒu yǒu shè jí zāi hài guǎn lǐ de fǎ lv huò zhèng cè ?
+shè qū shì fǒu zhì dìng liǎo zì jǐ de zāi hài guǎn lǐ zhèng cè ?
+nín huò nín de jiā rén guò qù shì fǒu shòu guò zāi nán de yǐng xiǎng ?
+4. nín xiǎng liǎo jiě yǐ xià nǎ xiē zāi hài ?
+dì zhèn
+hóng shuǐ
+tǔ bēng
+bīng báo
+yě huǒ hé yīn mái
+tí jiāo!
+xuǎn yī gè yǔ yán
+英语
+马来语
+华语
+设定一个语言!
+
